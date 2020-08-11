@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dice</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="dice.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Roll The Dice!</h1>
+<div id="dice-container">
+<div class="dice" id="dice1">
+<div class="circle"></div>
+</div>
+<div class="dice" id="dice2">
+<div class="circle circle2"></div><div class="circle circle3"></div>
+</div>
+<div class="dice" id="dice3">
+<div class="circle circle2"></div><div class="circle"></div><div class="circle circle3"></div>
+</div>
+<div class="dice" id="dice4">
+<div class="circle-container1"><div class="circle"></div>
+</div>
+<div class="circle-container2"><div class="circle"></div>
+</div>
+<div class="circle-container3"><div class="circle"></div>
+</div>
+<div class="circle-container4"><div class="circle"></div>
+</div>
+</div>
+<div class="dice" id="dice5">
+<div class="circle-container5"><div class="circle circle3"></div><div class="circle circle3"></div>
+</div>
+<div class="circle-container6"><div class="circle"></div>
+</div>
+<div class="circle-container5"><div class="circle circle2"></div><div class="circle circle2"></div>
+</div>
+</div>
+<div class="dice" id="dice6">
+<div class="circle-container7"><div class="circle"></div><div class="circle"></div>
+</div>
+<div class="circle-container8"><div class="circle"></div><div class="circle"></div>
+</div>
+<div class="circle-container7"><div class="circle"></div><div class="circle"></div>
+</div>
+</div>
+
+</div> <!-- end dice container -->
+
+<p id="output"></p>
+<p id="totalRoll"></p>
+<div id="button-container">
+<input type="button" value="Roll the Dice" onClick="rollTheDice()">
+</div>
+
+<script src="dice.js"></script>
+</body>
+</html>

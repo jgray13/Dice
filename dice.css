@@ -1,0 +1,99 @@
+
+h1 {
+	font-size: 4em;
+	text-align: center;
+}
+#dice-container {
+	display: flex;
+}
+.dice {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 190px;
+	height: 190px;
+	margin: 0 auto 10px;
+	background-color: #000;
+	border-radius: 10px;
+}
+.circle-container1 {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+	align-self: flex-start;
+	height: 50%;
+}
+.circle-container2 {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+	align-self: flex-start;
+	height: 50%;
+}
+.circle-container3 {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+	align-self: flex-end;
+	height: 50%;
+}
+.circle-container4 {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: center;
+	align-self: flex-end;
+	height: 50%;
+}
+.circle-container5 {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-around;
+	height: 37%;
+}
+.circle-container6 {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: center;
+	height: 26%;
+}
+.circle-container7 {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-around;
+	align-items: center;
+	height: 37%;
+}
+.circle-container8 {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-around;
+	height: 26%;
+}
+.circle {
+	display: flex;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+	align-self: center;
+	justify-content: center;
+}
+.circle2 {
+	align-self: flex-end;
+	margin: 0 0 10%;
+}
+.circle3 {
+	align-self: flex-start;
+	margin: 10% 0 0;
+}
+.circle4 {
+	align-self: flex-end;
+}
+.circle5 {
+	align-self: flex-start;
+}
+#button-container {
+	display: flex;
+	justify-content: center;
+}
