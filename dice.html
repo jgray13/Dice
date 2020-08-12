@@ -9,7 +9,9 @@
 <body>
 
 <h1>Roll The Dice!</h1>
-<div id="dice-container">
+<div id="outer">
+<div id="dice-container1">
+
 <div class="dice" id="dice1">
 <div class="circle"></div>
 </div>
@@ -48,11 +50,106 @@
 
 </div> <!-- end dice container -->
 
-<p id="output"></p>
-<p id="totalRoll"></p>
+<div id="dice-container2">
+
+<div class="dice" id="dice7">
+<div class="circle"></div>
+</div>
+<div class="dice" id="dice8">
+<div class="circle circle2"></div><div class="circle circle3"></div>
+</div>
+<div class="dice" id="dice9">
+<div class="circle circle2"></div><div class="circle"></div><div class="circle circle3"></div>
+</div>
+<div class="dice" id="dice10">
+<div class="circle-container1"><div class="circle"></div>
+</div>
+<div class="circle-container2"><div class="circle"></div>
+</div>
+<div class="circle-container3"><div class="circle"></div>
+</div>
+<div class="circle-container4"><div class="circle"></div>
+</div>
+</div>
+<div class="dice" id="dice11">
+<div class="circle-container5"><div class="circle circle3"></div><div class="circle circle3"></div>
+</div>
+<div class="circle-container6"><div class="circle"></div>
+</div>
+<div class="circle-container5"><div class="circle circle2"></div><div class="circle circle2"></div>
+</div>
+</div>
+<div class="dice" id="dice12">
+<div class="circle-container7"><div class="circle"></div><div class="circle"></div>
+</div>
+<div class="circle-container8"><div class="circle"></div><div class="circle"></div>
+</div>
+<div class="circle-container7"><div class="circle"></div><div class="circle"></div>
+</div>
+</div>
+
+</div> <!-- end dice container -->
+</div <!-- end outer -->
+
+<!--
+<div class="dice" class="dice1">
+<div class="circle"></div>
+</div>
+<div class="dice" class="dice2">
+<div class="circle circle2"></div><div class="circle circle3"></div>
+</div>
+<div class="dice" class="dice3">
+<div class="circle circle2"></div><div class="circle"></div><div class="circle circle3"></div>
+</div>
+<div class="dice" class="dice4">
+<div class="circle-container1"><div class="circle"></div>
+</div>
+<div class="circle-container2"><div class="circle"></div>
+</div>
+<div class="circle-container3"><div class="circle"></div>
+</div>
+<div class="circle-container4"><div class="circle"></div>
+</div>
+</div>
+<div class="dice" class="dice5">
+<div class="circle-container5"><div class="circle circle3"></div><div class="circle circle3"></div>
+</div>
+<div class="circle-container6"><div class="circle"></div>
+</div>
+<div class="circle-container5"><div class="circle circle2"></div><div class="circle circle2"></div>
+</div>
+</div>
+<div class="dice" class="dice6">
+<div class="circle-container7"><div class="circle"></div><div class="circle"></div>
+</div>
+<div class="circle-container8"><div class="circle"></div><div class="circle"></div>
+</div>
+<div class="circle-container7"><div class="circle"></div><div class="circle"></div>
+</div>
+</div>
+-->
+
+</div> <!-- end dice container -->
+
 <div id="button-container">
 <input type="button" value="Roll the Dice" onClick="rollTheDice()">
 </div>
+
+<p id="output"></p>
+<p id="totalRoll"></p>
+
+<div id="output-container">
+<div id="output1"></div>
+<div class="operator"><p>+</p></div>
+<div id="output2"></div>
+<div class="operator"><p>=</p></div>
+<div id="answer">
+<input type="number" min="2" max="12" id="diceAnswer">
+</div>
+<div id="tick-container">
+</div>
+</div>
+
 
 <script src="dice.js"></script>
 </body>
