@@ -7,7 +7,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	background-color: red;
+	border: 2px solid #000;
 }
 #dice-container1 {
 	display: flex;
