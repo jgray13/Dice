@@ -121,10 +121,12 @@ rollButton.onclick = function(){
 	console.log(num);
 	if (numEntered === correctAnswer) {
 	  document.getElementById("message").style.display = "block";
+	  document.getElementById("message").style.backgroundColor = "#6eff63";
       document.getElementById("message").innerHTML = message1;
   document.getElementById("refresh-container").style.display = "flex";
 	} else if (numEntered !== correctAnswer) {
 		document.getElementById("message").style.display = "block";
+		document.getElementById("message").style.backgroundColor = "#ff6363";
 		document.getElementById("message").innerHTML = message2;
 		document.getElementById("refresh-container").style.display = "flex";
 	} else if (num === "") {

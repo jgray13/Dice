@@ -7,20 +7,24 @@ body {
 	line-height: 150%;
     margin: 0 auto;
 	width: 100%;
+	font-family: Arial;
+	background-color: #d08aff;
 }
 h1 {
+	font-family: Helvetica;
 	font-size: 4em;
 	margin: 35px auto;
 	text-align: center;
 }
 h3 {
-	font-size: 22px;
+	font-size: 20px;
 	margin: 15px auto;
 }
 #outer {
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+	padding: 10px 0;
 }
 #dice-container1 {
 	display: flex;
@@ -166,6 +170,10 @@ input {
 */
 input[type=button] {
 	font-size: 19px;
+	padding: 5px 15px;
+	background-color: #adceff;
+	border: none;
+	outline: none;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -186,7 +194,7 @@ input[type=number] {
 	justify-content: space-around;
 	align-content: center;
 	width: 40%;
-	margin: 30px 30%;
+	margin: 20px 30%;
 	font-size: 25px;
 	font-weight: bold;
 }
@@ -195,27 +203,33 @@ input[type=number] {
 	justify-content: center;
 	align-items: center;
 	flex-basis: 15%;
-	border: 2px solid #bbbbbb;
+	border: 2px solid #8e5fad;
+	background-color: #f4f4f4;
 }
 #output2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-basis: 15%;
-	border: 2px solid #bbbbbb;
+	border: 2px solid #8e5fad;
+	background-color: #f4f4f4;
 }
 .operator {
 	display: flex;
 	justify-content: center;
 	flex-basis: 15%;
-	border: 2px solid #bbbbbb;
+	border: 2px solid #8e5fad;
+	background-color: #f4f4f4;
 }
 #answer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-basis: 15%;
-	border: 2px solid #bbbbbb;
+	border: 2px solid #8e5fad;
+}
+#diceAnswer {
+	background-color: #f4f4f4;
 }
 #submit-container {
 	display: flex;
@@ -224,6 +238,10 @@ input[type=number] {
 }
 #sub {
 	font-size: 18px;
+	padding: 5px 15px;
+	background-color: #adceff;
+	border: none;
+	outline: none;
 }
 #message-container {
 	display: flex;
@@ -233,17 +251,21 @@ input[type=number] {
 	display: none;
     padding: 0 25px;
 	text-align: center;
-    background-color: #f4f4f4;
-    border: 3px solid rgb(0, 205, 0, 0.7);
+    background-color: #6eff63;
+    border: 3px solid #8e5fad;
     border-radius: 5px;
 }
 button {
 	font-size: 19px;
+	padding: 5px 15px;
+	background-color: #adceff;
+	border: none;
+	outline: none;
 }
 #refresh-container {
 	display: none;
 	justify-content: center;
-	margin: 30px 0 0;
+	margin: 20px 0 0;
 }
 /*
 #message1 {
