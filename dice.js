@@ -111,9 +111,10 @@ rollButton.onclick = function(){
   var correctAnswer = dice1 + dice2;
   console.log(correctAnswer);
   var message1 = "<h3>Well done</h3>";
-  var message2 = "<h3>Try again</h3>";
-  var valEntered = document.getElementById("diceAnswer");
-  valEntered.onkeyup = function() {
+  var message2 = "<h3>The answer is " + correctAnswer + "<br>Try again</h3>";
+  var submit = document.getElementById("sub");
+  submit.onclick = function() {
+	var valEntered = document.getElementById("diceAnswer");
   	var num = valEntered.value;
 	var numEntered = parseInt(num);
 	console.log(numEntered);
@@ -121,14 +122,22 @@ rollButton.onclick = function(){
 	if (numEntered === correctAnswer) {
 	  document.getElementById("message").style.display = "block";
       document.getElementById("message").innerHTML = message1;
+  document.getElementById("refresh-container").style.display = "flex";
 	} else if (numEntered !== correctAnswer) {
 		document.getElementById("message").style.display = "block";
 		document.getElementById("message").innerHTML = message2;
+		document.getElementById("refresh-container").style.display = "flex";
 	} else if (num === "") {
-		document.getElementById("message").style.display = "none";
+		document.getElementById("message").style.display = "none";   //not working
 	}
   };
+  
 };
+
+var refresh = document.getElementById("refresh-button");
+refresh.onclick = function() {
+	window.location.reload();
+}
 
 // clear input
 /*
