@@ -132,11 +132,8 @@
 </div> <!-- end dice container -->
 
 <div id="button-container">
-<input type="button" value="Roll the Dice" onClick="rollTheDice()">
+<input type="button" value="Roll the Dice" id="roll-button">
 </div>
-
-<p id="output"></p>
-<p id="totalRoll"></p>
 
 <div id="output-container">
 <div id="output1"></div>
@@ -146,10 +143,15 @@
 <div id="answer">
 <input type="number" min="2" max="12" id="diceAnswer">
 </div>
+<!--
 <div id="tick-container">
 </div>
+-->
+</div><!-- end output container -->
+<div id="message-container">
+<div id="message">
 </div>
-
+</div>
 
 <script src="dice.js"></script>
 </body>

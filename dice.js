@@ -1,14 +1,14 @@
-function rollTheDice(){
-  highest_number = 6;
-  lowest_number = 1;
-  dice1 = Math.floor((Math.random()*highest_number)+lowest_number);   
-  dice2 = Math.floor((Math.random()*highest_number)+lowest_number);   
-  document.getElementById('output1').innerHTML = dice1;   
-  document.getElementById('output2').innerHTML = dice2;
-  
-  console.log(dice1);
-  console.log(dice2);
-  
+highest_number = 6;
+lowest_number = 1;
+dice1 = Math.floor((Math.random()*highest_number)+lowest_number);   
+dice2 = Math.floor((Math.random()*highest_number)+lowest_number);   
+document.getElementById('output1').innerHTML = dice1;   
+document.getElementById('output2').innerHTML = dice2;
+console.log(dice1);
+console.log(dice2);
+var rollButton = document.getElementById("roll-button");
+rollButton.onclick = function(){
+  document.getElementById("output-container").style.display = "flex";
   var d1 = document.getElementById("dice1");
   var d2 = document.getElementById("dice2");
   var d3 = document.getElementById("dice3");
@@ -108,23 +108,40 @@ function rollTheDice(){
 	  d12.style.display = "flex";
   }
 
-  var valEntered = document.getElementById("diceAnswer").value;
-  valEntered.onkeyup = userInput();
-  function userInput() {
-	  var numEntered = parseInt(valEntered);
-	  console.log(valEntered);
-	  console.log(numEntered);
-	  if (numEntered === dice1.value + dice2.value) {
-		  
-	  }
-  }
+  var correctAnswer = dice1 + dice2;
+  console.log(correctAnswer);
+  var message1 = "<h3>Well done</h3>";
+  var message2 = "<h3>Try again</h3>";
+  var valEntered = document.getElementById("diceAnswer");
+  valEntered.onkeyup = function() {
+  	var num = valEntered.value;
+	var numEntered = parseInt(num);
+	console.log(numEntered);
+	console.log(num);
+	if (numEntered === correctAnswer) {
+	  document.getElementById("message").style.display = "block";
+      document.getElementById("message").innerHTML = message1;
+	} else if (numEntered !== correctAnswer) {
+		document.getElementById("message").style.display = "block";
+		document.getElementById("message").innerHTML = message2;
+	} else if (num === "") {
+		document.getElementById("message").style.display = "none";
+	}
+  };
+};
+
+// clear input
+/*
+rollButton.onclick = function() {
+	if (dice1 !== 
 }
 
 
 
+	document.getElementById("output1").value = '';
+	document.getElementById("output2").value = '';
+*/
 /*
-
-
 Math.floor((Math.random()*highest_number)+lowest_number)
 
 above code processed in this order:
@@ -133,6 +150,4 @@ above code processed in this order:
 2   Add lowest number
 3   Round down ( with Math.floor ) the result of steps 1 and 2
 4   Assign the rounded value to dice1
-
-
 */

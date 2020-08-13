@@ -3,11 +3,14 @@ h1 {
 	font-size: 4em;
 	text-align: center;
 }
+h3 {
+	font-size: 22px;
+	margin: 15px auto;
+}
 #outer {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	border: 2px solid #000;
 }
 #dice-container1 {
 	display: flex;
@@ -146,45 +149,81 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
+/*
 input {
 	font-size: 20px;
 }
+*/
+input[type=button] {
+	font-size: 19px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+	padding: 0;
+	border: 0;
+	outline: none;
+	text-align: center;
+	font-size: 25px;
+	height: 100%;
+}
 #output-container {
-	display: flex;
+	display: none;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	width: 40%;
-	margin: 0 30%;
-	font-size: 20px;
+	margin: 30px 30%;
+	font-size: 25px;
 	font-weight: bold;
-	border: 2px solid #000;
 }
 #output1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-basis: 10%;
+	flex-basis: 15%;
 	border: 2px solid #bbbbbb;
 }
 #output2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-basis: 10%;
+	flex-basis: 15%;
 	border: 2px solid #bbbbbb;
 }
 .operator {
 	display: flex;
 	justify-content: center;
-	flex-basis: 10%;
+	flex-basis: 15%;
 	border: 2px solid #bbbbbb;
 }
 #answer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-basis: 10%;
+	flex-basis: 15%;
 	border: 2px solid #bbbbbb;
+}
+#message-container {
+	display: flex;
+	justify-content: center;
+}
+#message {
+	display: none;
+    padding: 0 25px;
+	text-align: center;
+    background-color: #f4f4f4;
+    border: 3px solid rgb(0, 205, 0, 0.7);
+    border-radius: 5px;
+}
+/*
+#message1 {
+	display: none;
+}
+#message2 {
+	display: none;
 }
 #tick-container {
 	display: flex;
@@ -193,3 +232,4 @@ input {
 	flex-basis: 10%;
 	border: 2px solid #bbbbbb;
 }
+*/
