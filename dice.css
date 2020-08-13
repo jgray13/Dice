@@ -170,9 +170,10 @@ input {
 */
 input[type=button] {
 	font-size: 19px;
+	font-weight: bold;
 	padding: 5px 15px;
 	background-color: #adceff;
-	border: none;
+	border: 3px solid #8e5fad;
 	outline: none;
 }
 input[type=number]::-webkit-inner-spin-button, 
@@ -186,6 +187,7 @@ input[type=number] {
 	outline: none;
 	text-align: center;
 	font-size: 25px;
+	font-weight: bold;
 	height: 100%;
 }
 #output-container {
@@ -238,9 +240,10 @@ input[type=number] {
 }
 #sub {
 	font-size: 18px;
+	font-weight: bold;
 	padding: 5px 15px;
 	background-color: #adceff;
-	border: none;
+	border: 3px solid #8e5fad;
 	outline: none;
 }
 #message-container {
@@ -257,9 +260,10 @@ input[type=number] {
 }
 button {
 	font-size: 19px;
+	font-weight: bold;
 	padding: 5px 15px;
 	background-color: #adceff;
-	border: none;
+	border: 3px solid #8e5fad;
 	outline: none;
 }
 #refresh-container {
