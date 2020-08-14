@@ -20,9 +20,6 @@ h3 {
 	font-size: 20px;
 	margin: 15px 0;
 }
-strong {
-	padding: 0 6px;
-}
 #flx1 {
 	display: flex;
 	flex-basis: 45%;
@@ -180,11 +177,6 @@ strong {
 	display: flex;
 	justify-content: center;
 }
-/*
-input {
-	font-size: 20px;
-}
-*/
 input[type=button] {
 	font-size: 19px;
 	font-weight: bold;
@@ -288,22 +280,6 @@ button {
 	justify-content: center;
 	margin: 20px 0 0;
 }
-/*
-#message1 {
-	display: none;
-}
-#message2 {
-	display: none;
-}
-#tick-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-basis: 10%;
-	border: 2px solid #bbbbbb;
-}
-*/
-
 /* media queries */
 @media only screen and (min-width: 1400px) {
 	#headings {
