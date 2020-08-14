@@ -12,13 +12,30 @@ body {
 }
 h1 {
 	font-family: Helvetica;
-	font-size: 4em;
+	font-size: 50px;
 	margin: 35px auto;
 	text-align: center;
 }
 h3 {
 	font-size: 20px;
-	margin: 15px auto;
+	margin: 15px 0;
+}
+strong {
+	padding: 0 6px;
+}
+#flx1 {
+	display: flex;
+	flex-basis: 45%;
+	justify-content: center;
+}
+#flx2 {
+	display: flex;
+	flex-basis: 30%;
+	justify-content: center;
+}
+#headings {
+	display: flex;
+	justify-content: center;
 }
 #outer {
 	display: flex;
@@ -29,13 +46,13 @@ h3 {
 #dice-container1 {
 	display: flex;
 	flex-basis: 45%;
-	margin: 0 5% 0 0;
+	margin: 0 2% 0 0;
 	justify-content: flex-end;
 }
 #dice-container2 {
 	display: flex;
 	flex-basis: 45%;
-	margin: 0 0 0 5%;
+	margin: 0 0 0 2%;
 	justify-content: flex-start;
 }
 #dice1 {
@@ -239,7 +256,7 @@ input[type=number] {
 	align-items: center;
 }
 #sub {
-	font-size: 18px;
+	font-size: 19px;
 	font-weight: bold;
 	padding: 5px 15px;
 	background-color: #adceff;
@@ -286,3 +303,194 @@ button {
 	border: 2px solid #bbbbbb;
 }
 */
+
+/* media queries */
+@media only screen and (min-width: 1400px) {
+	#headings {
+		width: 84%;
+		margin: 0 8%;
+	}
+}
+@media only screen and (max-width: 1200px){
+	#flx1 {
+    flex-basis: 60%;
+}
+#flx2 {
+    flex-basis: 40%;
+}
+	.dice {
+	width: 150px;
+	height: 150px;
+}
+.circle {
+	width: 30px;
+	height: 30px;
+}
+#output-container {
+	width: 46%;
+	margin: 20px 27%;
+}
+}
+@media only screen and (max-width: 1100px){
+	#output-container {
+	width: 50%;
+	margin: 20px 25%;
+}
+h1 {
+    font-family: Helvetica;
+    font-size: 40px;
+    margin: 25px auto;
+    text-align: center;
+}
+h3 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+}
+@media only screen and (max-width: 1000px){
+	#output-container {
+	width: 54%;
+	margin: 20px 23%;
+}
+}
+@media only screen and (max-width: 900px){
+	#output-container {
+	width: 60%;
+	margin: 20px 20%;
+}
+}
+@media only screen and (max-width: 800px){
+	#output-container {
+	width: 66%;
+	margin: 20px 17%;
+}
+#headings {
+    flex-direction: column;
+}
+h3 {
+    margin: 5px 0;
+}
+#flx1 {
+    flex-basis: 100%;
+}
+#flx2 {
+    flex-basis: 100%;
+}
+}
+@media only screen and (max-width: 700px){
+	#output-container {
+	width: 80%;
+	margin: 20px 10%;
+}
+h1 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 17px;
+}
+}
+@media only screen and (max-width: 600px){
+	#output-container {
+	width: 90%;
+	margin: 20px 5%;
+}
+}
+@media only screen and (max-width: 550px){
+	#output-container {
+	width: 98%;
+	margin: 20px 1%;
+	font-size: 19px;
+}
+input[type=number] {
+    font-size: 19px;
+}
+#sub {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+input[type=button] {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+button {
+    font-size: 16px;
+    padding: 5px 10px;
+}
+	.dice {
+	width: 130px;
+	height: 130px;
+}
+.circle {
+	width: 20px;
+	height: 20px;
+}
+#output1 {
+    flex-basis: 12%;
+}
+.operator {
+    flex-basis: 12%;
+}
+#output2 {
+    flex-basis: 12%;
+}
+#answer {
+    flex-basis: 12%;
+}
+}
+@media only screen and (max-width: 450px){
+h1 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 15px;
+}
+	.dice {
+	width: 90px;
+	height: 90px;
+}
+.circle {
+	width: 15px;
+	height: 15px;
+}
+#output1 {
+    flex-basis: 13%;
+}
+.operator {
+    flex-basis: 13%;
+}
+#output2 {
+    flex-basis: 13%;
+}
+}
+@media only screen and (max-width: 400px){
+#sub {
+    font-size: 14px;
+    padding: 5px 7px;
+}
+input[type=button] {
+    font-size: 14px;
+    padding: 5px 7px;
+}
+button {
+    font-size: 14px;
+    padding: 5px 7px;
+}
+	#output-container {
+		width: 100%;
+		margin: 20px 0;
+	font-size: 15px;
+}
+input[type=number] {
+    font-size: 15px;
+}
+}
+@media only screen and (max-width: 360px) {
+h3 {
+    font-size: 14px;
+}
+}
+@media only screen and (max-width: 340px) {
+h3 {
+    font-size: 13px;
+}
+}
